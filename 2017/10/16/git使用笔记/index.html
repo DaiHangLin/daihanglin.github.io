@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="git删除commit记录，git恢复删除的commit记录">
+<meta name="description" content="————   2017.10.12 —————1. git status//查看git status 可能存在三种文件 12345678910111213//第一种 未被跟踪的文件，即新添加的文件1.1  Untracked files:    //git add &amp;lt;file&amp;gt; 将文件添加staged中  1.1.1 (use &quot;git add &amp;lt;file&amp;gt;...&quot; to">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git使用笔记">
 <meta property="og:url" content="https://daihanglin.github.io/2017/10/16/git使用笔记/index.html">
 <meta property="og:site_name" content="戴杭林">
-<meta property="og:description" content="git删除commit记录，git恢复删除的commit记录">
+<meta property="og:description" content="————   2017.10.12 —————1. git status//查看git status 可能存在三种文件 12345678910111213//第一种 未被跟踪的文件，即新添加的文件1.1  Untracked files:    //git add &amp;lt;file&amp;gt; 将文件添加staged中  1.1.1 (use &quot;git add &amp;lt;file&amp;gt;...&quot; to">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-16T10:55:39.000Z">
+<meta property="og:updated_time" content="2017-10-16T11:03:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用笔记">
-<meta name="twitter:description" content="git删除commit记录，git恢复删除的commit记录">
+<meta name="twitter:description" content="————   2017.10.12 —————1. git status//查看git status 可能存在三种文件 12345678910111213//第一种 未被跟踪的文件，即新添加的文件1.1  Untracked files:    //git add &amp;lt;file&amp;gt; 将文件添加staged中  1.1.1 (use &quot;git add &amp;lt;file&amp;gt;...&quot; to">
 
 
 
@@ -319,10 +319,6 @@
           
 
           
-              <div class="post-description">
-                  git删除commit记录，git恢复删除的commit记录
-              </div>
-          
 
         </div>
       </header>
@@ -341,7 +337,8 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//第一种 未被跟踪的文件，即新添加的文件</span></div><div class="line"><span class="number">1.1</span>  Untracked files:  </div><div class="line">  <span class="comment">//git add &lt;file&gt; 将文件添加staged中</span></div><div class="line">  <span class="number">1.1</span>.1 (use <span class="string">"git add &lt;file&gt;..."</span> to include in what will be committed)</div><div class="line"><span class="comment">//第二种 已添加的文件且还未加入到staged中</span></div><div class="line"><span class="number">1.2</span>  Changes not staged <span class="keyword">for</span> commit </div><div class="line">  <span class="number">1.2</span>.1 (use <span class="string">"git add &lt;file&gt;..."</span> to update what will be committed)</div><div class="line">  <span class="comment">//git checkout -- &lt;file&gt; 撤销对该文件的修改</span></div><div class="line">  <span class="number">1.2</span>.2 (use <span class="string">"git checkout -- &lt;file&gt;..."</span> to discard changes in working directory)</div><div class="line"><span class="comment">//第三种 已加入到暂存中,可以提交	</span></div><div class="line"><span class="number">1.3</span>  Changes to be committed</div><div class="line">  <span class="comment">// git reset HEAD &lt;file&gt;  取消暂存</span></div><div class="line">  <span class="number">1.3</span>.1 (use <span class="string">"git reset HEAD &lt;file&gt;..."</span> to unstage)</div></pre></td></tr></table></figure>
 <h2 id="先添加修改的文件staged中"><a href="#先添加修改的文件staged中" class="headerlink" title="先添加修改的文件staged中"></a>先添加修改的文件staged中</h2><pre><code>git add a1.txt
 git add a2.txt
-</code></pre><h2 id="reset-默认是第一个commit前-并且不在暂存中"><a href="#reset-默认是第一个commit前-并且不在暂存中" class="headerlink" title="reset 默认是第一个commit前 并且不在暂存中"></a>reset 默认是第一个commit前 并且不在暂存中</h2><pre><code>git reset --mixed (HEAD~0)  
+</code></pre><a id="more"></a>
+<h2 id="reset-默认是第一个commit前-并且不在暂存中"><a href="#reset-默认是第一个commit前-并且不在暂存中" class="headerlink" title="reset 默认是第一个commit前 并且不在暂存中"></a>reset 默认是第一个commit前 并且不在暂存中</h2><pre><code>git reset --mixed (HEAD~0)  
 git status 
 //发现所有修改的文件都在unstaged中
 </code></pre><h2 id="添加所有文件添加到暂存中"><a href="#添加所有文件添加到暂存中" class="headerlink" title="添加所有文件添加到暂存中"></a>添加所有文件添加到暂存中</h2><pre><code>git add .

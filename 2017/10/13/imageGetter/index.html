@@ -79,22 +79,22 @@
 
 
 
-<meta name="description" content="Android中图文混排，ImageGetter和Gliede的一起使用">
+<meta name="description" content="1. 使用ImageGetter的场景   Android中用于显示文本的控件为textView，textView不仅仅能显示文本，同时也能显示富文本，即一些包含html标签的文本。 //显示普通文本 textView.setText(&amp;quot;普通文本&amp;quot;); //显示html富文本 textView.setText(Html.fromHtml(&amp;quot;&amp;lt;b&amp;gt;普通文本&amp;">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="优雅的使用Html.ImageGetter">
 <meta property="og:url" content="https://daihanglin.github.io/2017/10/13/imageGetter/index.html">
 <meta property="og:site_name" content="戴杭林">
-<meta property="og:description" content="Android中图文混排，ImageGetter和Gliede的一起使用">
+<meta property="og:description" content="1. 使用ImageGetter的场景   Android中用于显示文本的控件为textView，textView不仅仅能显示文本，同时也能显示富文本，即一些包含html标签的文本。 //显示普通文本 textView.setText(&amp;quot;普通文本&amp;quot;); //显示html富文本 textView.setText(Html.fromHtml(&amp;quot;&amp;lt;b&amp;gt;普通文本&amp;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://daihanglin.github.io/2017/10/13/imageGetter/imagegetter.png">
 <meta property="og:image" content="https://daihanglin.github.io/2017/10/13/imageGetter/imagegetter_result1.png">
 <meta property="og:image" content="https://daihanglin.github.io/2017/10/13/imageGetter/imagegetter_result2.png">
 <meta property="og:image" content="https://daihanglin.github.io/2017/10/13/imageGetter/imagegetter_result3.png">
-<meta property="og:updated_time" content="2017-10-16T10:56:30.000Z">
+<meta property="og:updated_time" content="2017-10-16T11:01:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="优雅的使用Html.ImageGetter">
-<meta name="twitter:description" content="Android中图文混排，ImageGetter和Gliede的一起使用">
+<meta name="twitter:description" content="1. 使用ImageGetter的场景   Android中用于显示文本的控件为textView，textView不仅仅能显示文本，同时也能显示富文本，即一些包含html标签的文本。 //显示普通文本 textView.setText(&amp;quot;普通文本&amp;quot;); //显示html富文本 textView.setText(Html.fromHtml(&amp;quot;&amp;lt;b&amp;gt;普通文本&amp;">
 <meta name="twitter:image" content="https://daihanglin.github.io/2017/10/13/imageGetter/imagegetter.png">
 
 
@@ -324,10 +324,6 @@
           
 
           
-              <div class="post-description">
-                  Android中图文混排，ImageGetter和Gliede的一起使用
-              </div>
-          
 
         </div>
       </header>
@@ -349,9 +345,9 @@ textView.setText(&quot;普通文本&quot;);
 textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&quot;))
 //显示html富文本且包含图片
 textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&lt;img src = &quot;url&quot;&gt;&lt;/img&gt;&quot;, imageGetter, tagHandler))
-</code></pre> <a id="more"></a>
-<h1 id="2-ImageGetter介绍"><a href="#2-ImageGetter介绍" class="headerlink" title="2. ImageGetter介绍"></a>2. ImageGetter介绍</h1>  <img src="/2017/10/13/imageGetter/imagegetter.png" alt="imagegetter.png" title="">
+</code></pre><h1 id="2-ImageGetter介绍"><a href="#2-ImageGetter介绍" class="headerlink" title="2. ImageGetter介绍"></a>2. ImageGetter介绍</h1>  <img src="/2017/10/13/imageGetter/imagegetter.png" alt="imagegetter.png" title="">
 <p>  ImageGetter是一个接口，主要用于解析 “&lt;img src =”/&gt;”里的src属性，返回drawable，再使用drawable时需要确保drawable里有大小即Bounds</p>
+ <a id="more"></a>
 <h1 id="3-简单示例"><a href="#3-简单示例" class="headerlink" title="3. 简单示例"></a>3. 简单示例</h1><ul>
 <li>新建activity</li>
 </ul>
