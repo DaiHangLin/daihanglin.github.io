@@ -181,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -191,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -214,6 +214,125 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://daihanglin.github.io/2017/10/16/FlexBoxLayout与RecycleView配合使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="戴杭林">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="戴杭林">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/16/FlexBoxLayout与RecycleView配合使用/" itemprop="url">FlexBoxLayout与RecycleView配合使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-16T17:17:38+08:00">
+                2017-10-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -257,7 +376,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-13T19:36:23+08:00">
                 2017-10-13
@@ -306,7 +425,7 @@ textView.setText(&quot;普通文本&quot;);
 textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&quot;))
 //显示html富文本且包含图片
 textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&lt;img src = &quot;url&quot;&gt;&lt;/img&gt;&quot;, imageGetter, tagHandler))
-</code></pre><h1 id="2-ImageGetter介绍"><a href="#2-ImageGetter介绍" class="headerlink" title="2. ImageGetter介绍"></a>2. ImageGetter介绍</h1><p>  <img src="/images/imagegetter.png" alt=""></p>
+</code></pre><h1 id="2-ImageGetter介绍"><a href="#2-ImageGetter介绍" class="headerlink" title="2. ImageGetter介绍"></a>2. ImageGetter介绍</h1><p>  <img src="imageGetter/imagegetter.png" alt=""></p>
 <p>  ImageGetter是一个接口，主要用于解析 “&lt;img src =”/&gt;”里的src属性，返回drawable，再使用drawable时需要确保drawable里有大小即Bounds</p>
 <h1 id="3-简单示例"><a href="#3-简单示例" class="headerlink" title="3. 简单示例"></a>3. 简单示例</h1><ul>
 <li>新建activity</li>
@@ -318,7 +437,7 @@ textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&lt;img src 
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">activity</span> <span class="attr">android:name</span>=<span class="string">".TestImageGetter"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">intent-filter</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">"android.intent.action.MAIN"</span> /&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">category</span> <span class="attr">android:name</span>=<span class="string">"android.intent.category.LAUNCHER"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">activity</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
 <li><p>运行后结果</p>
-<p><img src="/images/imagegetter_result1.png" alt=""></p>
+<p><img src="imageGetter/imagegetter_result1.png" alt=""></p>
 </li>
 </ul>
 <h1 id="4-加载网络图片"><a href="#4-加载网络图片" class="headerlink" title="4. 加载网络图片"></a>4. 加载网络图片</h1><p>选择目前android上加载图片比较好的框架：<a href="https://github.com/bumptech/glide" target="_blank" rel="external">Glide</a></p>
@@ -335,7 +454,7 @@ textView.setText(Html.fromHtml(&quot;&lt;b&gt;普通文本&lt;/b&gt;&lt;img src 
 </li>
 </ul>
 <ul>
-<li>step4 查看运行结果<br><img src="/images/imagegetter_result2.png" alt=""></li>
+<li>step4 查看运行结果<br><img src="imageGetter/imagegetter_result2.png" alt=""></li>
 </ul>
 <h1 id="5-响应点击事件"><a href="#5-响应点击事件" class="headerlink" title="5. 响应点击事件"></a>5. 响应点击事件</h1><blockquote>
 <p>  假设有个需求需要点击图片后能够全屏查看，最简单的方法就是跳转到新的activity，因此就需要响应每个图片的点击事件</p>
@@ -365,7 +484,7 @@ ImageSpan[] imageSpans = spannableStringBuilder.getSpans(0, spannableStringBuild
 <li>step2 修改TestImageGetterActivity的代码，添加响应事件，需要修改的只有 html富文本罢了</li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">private</span> TextView tv;</div><div class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String url1 = <span class="string">"https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/newmusic/jingdianlaoge.png"</span>;</div><div class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String url2 = <span class="string">"https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/newmusic/lovesong.png"</span>;</div><div class="line">    <span class="comment">// 添加需要响应的 action  </span></div><div class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String ACTION_IMAGE = <span class="string">"com.lin.action.custom.image"</span>;</div><div class="line"></div><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(@Nullable Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">    setContentView(R.layout.act_tv_demo);</div><div class="line">    tv = (TextView) findViewById(R.id.tv);</div><div class="line">    </div><div class="line">    <span class="comment">// 在每个html的image标签 或者说 需要添加点击响应事件的文本添加</span></div><div class="line">    <span class="comment">// &lt;a href ="ACTION_STRING://?source=data"&gt;</span></div><div class="line">    String source = <span class="string">"this is a test of &lt;b&gt;ImageGetter&lt;/b&gt; it contains "</span> +</div><div class="line">            <span class="string">"two images: &lt;br/&gt;"</span> +</div><div class="line">            <span class="string">"&lt;a href=\""</span> + ACTION_IMAGE + <span class="string">"://?source="</span> + url1 + <span class="string">"\"&gt;"</span> +</div><div class="line">            <span class="string">"&lt;img src=\""</span> + url1 + <span class="string">"\"&gt;&lt;/a&gt;"</span> +</div><div class="line">            <span class="string">"&lt;br/&gt;and&lt;br/&gt;"</span> +</div><div class="line">            <span class="string">"&lt;a href=\""</span> + ACTION_IMAGE + <span class="string">"://?source="</span> + url2 + <span class="string">"\"&gt;"</span> +</div><div class="line">            <span class="string">"&lt;img src=\""</span> + url2 + <span class="string">"\"&gt;&lt;/a&gt;"</span>;</div><div class="line">    MyImageGetter myImageGetter = <span class="keyword">new</span> MyImageGetter();</div><div class="line">    tv.setText(Html.fromHtml(source, myImageGetter, <span class="keyword">null</span>));</div><div class="line">    tv.setMovementMethod(LinkMovementMethod.getInstance());</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="6-查看运行结果"><a href="#6-查看运行结果" class="headerlink" title="6. 查看运行结果"></a>6. 查看运行结果</h1><p>  <img src="/images/imagegetter_result3.png" alt=""></p>
+<h1 id="6-查看运行结果"><a href="#6-查看运行结果" class="headerlink" title="6. 查看运行结果"></a>6. 查看运行结果</h1><p>  <img src="imageGetter/imagegetter_result3.png" alt=""></p>
 <h1 id="7-需要改进"><a href="#7-需要改进" class="headerlink" title="7. 需要改进"></a>7. 需要改进</h1><ul>
 <li>如何高效的缩放图片 – 利用matrix</li>
 <li>如何去响应html文本中视频或者音频 – 同样parse html，生成不同的action，区别处理</li>
@@ -448,7 +567,7 @@ ImageSpan[] imageSpans = spannableStringBuilder.getSpans(0, spannableStringBuild
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-12T19:36:23+08:00">
                 2017-10-12
@@ -596,7 +715,7 @@ git log //查看历史提交记录
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-11T19:36:23+08:00">
                 2017-10-11
@@ -641,7 +760,7 @@ git log //查看历史提交记录
             <h1 id="TinyPng"><a href="#TinyPng" class="headerlink" title="TinyPng"></a>TinyPng</h1><ul>
 <li>推荐一个超级好用的图片压缩工具 – <a href="https://tinypng.com/" target="_blank" rel="external">TinyPng</a></li>
 </ul>
-<p>举个栗子，看不出有区别，而且还支持开发者接入<br>//压缩前<br><img src="/images/compress.png" alt=""><br>//压缩后<br><img src="/images/compress_after.png" alt=""></p>
+<p>举个栗子，看不出有区别，而且还支持开发者接入<br>//压缩前<br><img src="TinyPng/compress.png" alt=""><br>//压缩后<br><img src="TinyPng/compress_after.png" alt=""></p>
 
           
         
@@ -723,8 +842,8 @@ git log //查看历史提交记录
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -776,7 +895,7 @@ git log //查看历史提交记录
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
