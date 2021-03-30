@@ -7,8 +7,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'dhlin', // Usually your GitHub org/user name.
-  projectName: 'home', // Usually your repo name.
+  organizationName: 'DaiHangLin', // Usually your GitHub org/user name.
+  projectName: 'daihanglin.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
